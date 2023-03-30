@@ -1,0 +1,33 @@
+:root {
+    --body-back-color: #d4d4d4;
+    --main-back-color: #4c4c4c;
+    --main-text-color: #ffffff;
+    --main-border: 2px solid #01ffee;
+    --main-button-color: #ffffff;
+    --main-button-back-color: #4c4c4c;
+    --main-border-radius: 25px;
+    --sub-border: 2px solid #69d0ff;
+    --back-color-1: #e9e9e9;
+    --back-color-2: #4c4c4c;
+    --colorbutton-color: #000000; 
+    --colorbutton-border: 2px solid var(--colorbutton-color);
+    --button-shadow-1: 0 0 0 var(--colorbutton-color);
+    --button-shadow-2: 1px var(--button-depth) 0px var(--colorbutton-color);
+    --button-depth: 3px;
+}
+#fadeLayer {
+    position: absolute;
+    top:-10px;
+    left:0px;
+    width: 100%;
+    height: calc(100% + 10px);
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+    visibility: hidden;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+    transition: 0.5s !important;
+    background-color: #69d0ff !important;
+    border: 2px solid #69d0ff !important;
+}

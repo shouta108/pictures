@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    background-color: var(--body-back-color);
+}
+header {
+    text-align: right;
+}
+#goTop {
+    margin-right: 50px;
+    border: var(--main-border);
+    background-color: var(--main-back-color);
+    color: var(--main-button-color);
+    padding: 5px 10px;
+}
+input [type="text"]{
+    width: 300px;
+}
+label {
+  padding: 10px 40px;
+  color: var(--main-button-color);
+  border: var(--sub-border);
+  background-color: rgb(78, 91, 90);
+  cursor: pointer;
+  margin: 50px 50px;
+  white-space: nowrap;
+}
+form {
+    margin-top: 50px;
+    display: inline-flex;
+}
+
+textarea {
+    background: #ffffff;
+    margin: 20px auto;
+    border: var(--sub-border);
+    width: 200px;
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    resize: none;
+    min-height: 13px;
+    overflow: hidden;
+}
+textarea#title {
+    padding: 10px 10px;
+    max-height: 50px;
+}
+textarea#description {
+    padding: 15px 10px;
+    max-height: 300px;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+}
+#left {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 70%;
+}
+#file {
+    margin-left: auto;
+    margin-right: auto;
+}
+#right {
+    margin-right: 50px;
+    margin-left: auto;
+}
+#preview {
+    margin-top: 10px;
+    padding: 10px;
+    height: auto;
+    max-height: 550px;
+    border: var(--sub-border);
+    color: var(--main-text-color);
+    background-color: var(--main-back-color);
+}
+#submitbutton {
+    padding: 10px 40px;
+    color: var(--main-button-color);
+    border: var(--main-border);
+    background-color: rgb(78, 91, 90);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+[name="upload_image"] {
+    display: none;
+}
+img {
+    -webkit-user-drag: none;
+    height: 100%;
+}
+
+.colorchange {
+    justify-content: end;
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    width: min-content;
+    padding: 10px 5px;
+    background-color: #989898;
+    margin-left: auto;
+    visibility: hidden;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0px 5px;
+    border: solid 2px #000000;
+}
+
+#num1 {
+    background-color: var(--back-color-1);
+    box-shadow: 1px 2px 0px #000000;
+}
+
+#num2 {
+    background-color: var(--back-color-2);
+    box-shadow: 1px 2px 0px #000000;
+}

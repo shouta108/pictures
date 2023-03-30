@@ -1,0 +1,62 @@
+    body {
+        background-color: #808080;
+    }
+    
+    #login_form {
+        width: 400px;
+        padding: 40px 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgb(78, 91, 90);
+        text-align: center;
+    }
+    
+    form h1,form p {
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+    }
+    
+    form p {
+        font-size: 10px;
+    }
+    
+    form input[type = "text"],form input[type = "password"] {
+        background: none;
+        display: block;
+        margin: 20px auto;
+        border: 2px solid #69d0ff;
+        padding: 15px 10px;
+        width: 200px;
+        outline: none;
+        border-radius: 24px;
+        transition: 0.25s;
+        text-align: center;
+    }
+    
+    form input[type = "text"]:focus,form input[type = "password"]:focus {
+        width: 280px;
+        background-color: #a1bed8;
+    }
+    
+    form input[type = "submit"], form input[type = "button"]{
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        border: 2px solid #01ffee;
+        padding: 15px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 25px;
+        transition: 0.25s;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    form input[type = "submit"]:hover ,form input[type = "button"]:hover{
+        background-color: #69d0ff;
+        border: 2px solid #69d0ff;
+    }

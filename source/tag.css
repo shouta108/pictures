@@ -1,0 +1,63 @@
+body {
+    background-color: var(--body-back-color);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#goTop {
+    border: var(--main-border);
+    background-color: var(--main-button-back-color);
+    color: var(--main-button-color);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+main {
+    border: var(--main-border);
+    background-color: var(--main-back-color);
+    padding: 20px;
+}
+
+.in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    background-color: var(--body-back-color);
+    padding: 10px;
+}
+
+[name="submit"] {
+    margin-left: 10px;
+    border: var(--main-border);
+    background-color: var(--main-button-back-color);
+    color: var(--main-button-color);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#tag {
+    color: white;
+}
+
+.out {
+    border: 1px solid #000000;
+    background-color: var(--body-back-color);
+    padding: 20px;
+    max-height: calc(100vh - 260px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+[type="submit"][name="tag_name"] {
+    margin: 10px 5px;
+    height: 25px;
+    color: white;
+    border: solid 2px #000000;
+    background-color: var(--main-button-back-color);
+}

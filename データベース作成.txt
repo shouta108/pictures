@@ -1,0 +1,7 @@
+create database pictures character set utf8;
+use pictures;
+create table users(user_id int unsigned primary key AUTO_INCREMENT not null, user_name varchar(20) not null, user_password varchar(20) not null);
+create table images(image_id int unsigned primary key AUTO_INCREMENT not null, user_id int unsigned not null, title varchar(50) not null, image_src LONGTEXT not null, description varchar(300) not null, post_date datetime not null, foreign key(user_id) references users(user_id));
+create table tags(tag_id int unsigned primary key AUTO_INCREMENT not null, tag_name varchar(30) not null);
+create table tag_details(detail_id int unsigned primary key AUTO_INCREMENT not null, image_id int unsigned not null, tag_id int unsigned not null, foreign key (image_id) references images(image_id), foreign key (tag_id) references tags(tag_id));
+create table comments(comment_id int unsigned primary key AUTO_INCREMENT not null, image_id int unsigned not null, user_id int unsigned not null, comment varchar(300) not null, comment_date datetime not null, foreign key (image_id) references images(image_id), foreign key (user_id) references users(user_id));
